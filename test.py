@@ -68,4 +68,4 @@ if num > 10:
 else:
         print("Accsess Denied!")
         pow
-        
+        pass
