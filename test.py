@@ -62,4 +62,4 @@ b=raw_input("Input your Last Name : ")
 print ("Hello  " + b + " " + a)
 """
 
-
+print("Hello")
