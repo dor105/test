@@ -1,4 +1,4 @@
-"""
+'''
 #Turtle Game!
 
 import turtle
@@ -30,11 +30,11 @@ tina.forward(35)
 tina.left(90)
 
 delay = raw_input("press enter to finsih the game.")
-"""
+'''
 
 
 
-"""
+'''
 #2 version
 
 import sys
@@ -42,31 +42,39 @@ print("Python version")
 print (sys.version)
 print("Version info.")
 print (sys.version_info)
-"""
+'''
 
-"""
+'''
 #3 Date & Time
 
 import datetime     
 now = datetime.datetime.now()
 print ("Date & Time Now :")
 print (now.strftime("%Y-%m-%d %H:%M:%S"))
-"""
+'''
 
 
-"""
+'''
 #5 Reverse name
 
 a=raw_input("Input your First Name : ")
 b=raw_input("Input your Last Name : ")
 print ("Hello  " + b + " " + a)
-"""
+'''
 
-num = input("insert a number :")
-if num > 10:
-    print("login!")
-else:
-        print("Accsess Denied!")
-        pow
-        pass
-    
+
+import getpass
+counter = 0
+while (counter < 2 ):
+    name = raw_input("Insert a User Name :")
+    if name == "dor_l" or name == "linoy_l": 
+         password = getpass.getpass()
+         if password == "203266093" or password == "201135852":
+             print("welcome boss!")
+             break
+    else:
+         print("Not Know you!")
+ 
+
+
+ 
