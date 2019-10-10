@@ -57,24 +57,32 @@ print (now.strftime("%Y-%m-%d %H:%M:%S"))
 '''
 #5 Reverse name
 
-a=raw_input("Input your First Name : ")
-b=raw_input("Input your Last Name : ")
-print ("Hello  " + b + " " + a)
-'''
+a=raw_input("Input your First Name :  b=raw_input("Input your L      ast Name : ")
+print ("Hello  " + b + " " +      a)
+    '''    
 
-
+'''    
 import getpass
+
 counter = 0
-while (counter < 2 ):
+while (counter < 1 ):
     name = raw_input("Insert a User Name :")
     if name == "dor_l" or name == "linoy_l": 
          password = getpass.getpass()
-         if password == "203266093" or password == "201135852":
-             print("welcome boss!")
-             break
+         if name == "dor_l" and password == "201135852":
+             chioce = raw_input("---> welcome Dor levi ! <---\n\t Press the number from Option's:\n\t 1.Log off\n\t 2.Sleep\n\t 3.Shutdown\n\t")
+             if chioce == "1":
+                 print("Youre log off from the system **** Bye Bye!")
+                         
+
+         elif name == "linoy_l" and password == "203266093" :
+            chioce = input("---> welcome Linoy levi ! <---\n\t Press the number from Option's:\n\t 1.Log off\n\t 2.Sleep\n\t 3.Shutdown\n\t")
+         
+         else:
+              print("Wrong password!!")
+              password = getpass.getpass() 
     else:
-         print("Not Know you!")
- 
-
-
- 
+         print("Sorry! I dont know you.")
+'''
+        
+                 
