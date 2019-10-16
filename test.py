@@ -63,26 +63,62 @@ print ("Hello  " + b + " " +      a)
 
 '''    
 import getpass
+import time 
+import sys
 
 counter = 0
+
+def delay_print(s):
+    for c in s:
+        sys.stdout.write(c)
+        sys.stdout.flush()
+        time.sleep(0.1)
+
 while (counter < 1 ):
-    name = raw_input("Insert a User Name :")
+
+    name = input("Insert a User Name :")
     if name == "dor_l" or name == "linoy_l": 
          password = getpass.getpass()
          if name == "dor_l" and password == "201135852":
-             chioce = raw_input("---> welcome Dor levi ! <---\n\t Press the number from Option's:\n\t 1.Log off\n\t 2.Sleep\n\t 3.Shutdown\n\t")
-             if chioce == "1":
-                 print("Youre log off from the system **** Bye Bye!")
-                         
+             choice = input("---> welcome Dor levi ! <---\n\t Press the number from Option's:\n\t 1.Log off\n\t 2.Sleep\n\t 3.Shutdown\n\t")
+             if choice == "1":
+                 delay_print("------->log off from the system!")
+                 print("\n")
+             if choice == "2":
+                 delay_print("-------> Go sleep!")
+                 break
+             if choice =="3":
+                 delay_print("----------> Shuting down!")
+                 break
+     
 
-         elif name == "linoy_l" and password == "203266093" :
-            chioce = input("---> welcome Linoy levi ! <---\n\t Press the number from Option's:\n\t 1.Log off\n\t 2.Sleep\n\t 3.Shutdown\n\t")
+         if name == "linoy_l" and password == "203266093" :
+             choice = input("---> welcome Linoy levi ! <---\n\t Press the number from Option's:\n\t 1.Log off\n\t 2.Sleep\n\t 3.Shutdown\n\t")
+             if choice == "1":
+                 delay_print("------->log off from the system!")
+                 print("\n")
+             if choice == "2":
+                 delay_print("-------> Go sleep!")
+                 break
+             if choice =="3":
+                 delay_print("----------> Shuting down!")
+                 break
          
-         else:
-              print("Wrong password!!")
-              password = getpass.getpass() 
-    else:
-         print("Sorry! I dont know you.")
-'''
         
+'''
+
+'''      
+import os
+
+def bla(file):
+    if os.access(file,os.W_OK) is False:
+        os.chmod(file,0o755)
+    else:
+        print("it's fine")
+
+
+bla('/tmp') 
+'''
+
+
 
