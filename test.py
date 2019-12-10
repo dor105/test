@@ -8,9 +8,21 @@
 #    print ("My name is:" + name) 
 
 
+"""
 name = input("Enter your name : ")
 
 if name == "dor":
     print ("Welcome to Web server" )
 else:
  print ("accsess denied!")
+ """
+ 
+
+def example(x):
+     return x + 10*10
+
+x=10
+
+print (example(x))
+
+              
