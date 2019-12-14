@@ -18,11 +18,23 @@ else:
  """
  
 
-def example(x):
-     return x + 10*10
+from string import Template
 
-x=10
+def  Main():
+    cart = []
+    cart.append(dict(item="Totit", price=3 ,qty=3))
+    cart.append(dict(item="Beer", price=6 ,qty=2))          
+    cart.append(dict(item="Cake", price=8,qty=1))          
 
-print (example(x))
+    t = Template("$qty x $item = $price Usd")
+    total = 0
+    print("Receipt")
+    for data in cart:
+            print(t.substitute(data))
+            total+= data["price"]*data["qty"]
+    print("Total: "+str(total)+"$")
 
-              
+#if __name__ == '_main_':
+Main()
+
+
