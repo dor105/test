@@ -39,11 +39,38 @@ Main()
 
 
 """
+'''
+#fibonache
+a, b = 0, 1
+while b < 100:
+    print(b)
+    a, b = b, a + b
+'''
 
-x=10
-y=10
+'''
+#def example
+def ex_fun(x):
+    return x+1
 
-for i in range(1,y+1):
-    for j in range(1,x+1):
-        print(i*j +"\n")
-        
+ex_var = 10
+print(ex_var)
+
+processed_var = ex_fun(ex_var)
+print(processed_var)
+'''
+
+def complicated(x,y):
+
+    def squared(a): #def inside def
+        return a*a
+
+    x_squared = squared(y)
+    return x_squared + y * 5
+
+
+x = 5
+y = 3
+
+print(complicated(x,y))
+
+
