@@ -1,8 +1,11 @@
-int is_pal(char s[], int first,int last)
-{
-	if (first>=last)
-		return TRUE;
+#include <stdio.h>
 
-	return (s[first] == s[last])  && 
-	      is_pal(s, first+1,last-1);
+
+void main()
+
+{
+
+
+printf("hola!");
+
 }
