@@ -17,7 +17,7 @@ else:
  print ("accsess denied!")
  """
  
-
+"""
 from string import Template
 
 def  Main():
@@ -38,3 +38,12 @@ def  Main():
 Main()
 
 
+"""
+
+x=10
+y=10
+
+for i in range(1,y+1):
+    for j in range(1,x+1):
+        print(i*j +"\n")
+        
