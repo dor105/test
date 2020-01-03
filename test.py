@@ -59,6 +59,8 @@ processed_var = ex_fun(ex_var)
 print(processed_var)
 '''
 
+
+'''
 def complicated(x,y):
 
     def squared(a): #def inside def
@@ -72,5 +74,18 @@ x = 5
 y = 3
 
 print(complicated(x,y))
+'''
+
+def test_distinct(data):
+  if len(data) == len(set(data)):
+    return True
+  else:
+    return False;
+print(test_distinct([1,5,5,9]))
+
+
+
+
+
 
 
