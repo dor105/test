@@ -76,16 +76,20 @@ y = 3
 print(complicated(x,y))
 '''
 
+'''
+#return true if That's exactly same number in da range
 def test_distinct(data):
   if len(data) == len(set(data)):
     return True
   else:
     return False;
 print(test_distinct([1,5,5,9]))
+'''
 
+import json
 
-
-
-
-
-
+with open ('test.json') as json_data:
+    data = json.load(json_data)
+    for i in data['Os']:
+        print i['Name']['Version']
+ 
