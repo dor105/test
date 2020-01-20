@@ -91,5 +91,5 @@ import json
 with open ('test.json') as json_data:
     data = json.load(json_data)
     for i in data['Os']:
-        print i['Name']['Version']
+        print i['Name']
  
