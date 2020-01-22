@@ -3,8 +3,8 @@
 echo -n "Enter the username: "
 read username
 
-echo -n "Enter the password: "
+printf "Enter the password:\n"
 read -s password
 
-adduser "$username"
-echo "$password" | passwd "$username"
+
+echo "hello $username " "Today is $(date)"
