@@ -1,6 +1,10 @@
 - hosts: localhost
   tasks:
-    - name: Remove the file /tmp/x
-      file:
-          path: /tmp/x
+    - name: install python-routes pack
+      package:
+         name: python-routes
+         state: present
+    - name: Create file /tmp/xxx.txt
+      file: 
+          path: /tmp/xxx.txt
           state: touch
