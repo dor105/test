@@ -86,6 +86,8 @@ def test_distinct(data):
 print(test_distinct([1,5,5,9]))
 '''
 
+'''
+#json libary
 import json
 
 with open ('test.json') as json_data:
@@ -93,3 +95,31 @@ with open ('test.json') as json_data:
     for i in data['Os']:
         print i['Name']+i['Version']+ " " +i['Kernel']
  
+'''
+
+
+class clubsisr:
+
+    # class attribute
+    st1 = "1st Place"
+    st2 = "8st Place"
+
+    # instance attribute
+    def __init__(self, name, champion):
+        self.name = name
+        self.champion = champion
+
+# instantiate the clubs class
+yelo = clubsisr("FCBJ", 8)
+red = clubsisr("FCHT", 5)
+
+# access the class attributes
+print("Beitar Jeruslem is a {}".format(yelo.__class__.st1))
+print("Hapoel Tel-aviv is a {}".format(red.__class__.st2))
+
+# access the instance attributes
+print("{} is a {} championship's in israel leage".format( yelo.name, yelo.champion))
+print("{} is a {} championship's in israel leage".format( red.name, red.champion))
+
+
+
