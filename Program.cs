@@ -6,7 +6,7 @@ namespace test
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("COVID19!!!");
+            Console.WriteLine("COVID19!!!!");
         }
     }
 }
