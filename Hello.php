@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <html>
 <body>
 
@@ -27,3 +28,9 @@ Your Last name:<?php echo $_GET["lname"] ?>
 
 </body>
 </html>
+=======
+<?php
+echo "COVID19!";
+
+?>
+>>>>>>> 4e2447fe161b2901047c2b146dc35d68d48cf14f
