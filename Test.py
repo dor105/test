@@ -121,5 +121,4 @@ print("Hapoel Tel-aviv is a {}".format(red.__class__.st2))
 print("{} is a {} championship's in israel leage".format( yelo.name, yelo.champion))
 print("{} is a {} championship's in israel leage".format( red.name, red.champion))
 
-
-
+#That
