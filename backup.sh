@@ -13,7 +13,7 @@ backup_files="Test.{htm,json,py}"
 archive_file="/backupfolder/bck_`date +%Y%m%d`.tar"
 
 
-tar -cpzf /backupfolder/bck_`date +%Y%m%d`.tar Test.{htm,json,py}
+tar -cf /backupfolder/bck_`date +%Y%m%d`.tar Test.{htm,json,py}
 
 if [ `echo $?` -ne 0 ]
 then
