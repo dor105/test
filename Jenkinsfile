@@ -29,6 +29,7 @@
 
 */
 
+/*
 pipeline {
    agent any
 
@@ -40,4 +41,17 @@ pipeline {
          }
       }
    }
+}
+*/
+
+pipeline {
+    agent { label 'master' }
+    stages {
+        stage('build') {
+            steps {
+                echo "Starting Backup!"
+                sh "sh /test/backup.sh"
+            }
+        }
+    }
 }
